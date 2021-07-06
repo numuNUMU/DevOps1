@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ template_name }}의 정보</h2>
+<ul>
+    {% for key, value in template_info.items() %}
+        <li> {{ key }} : {{ value }} </li>
+    {% endfor %}
+
+    <p>한줄평: "{{ template_comment }}"</p>
+</ul>
+{% endblock %}

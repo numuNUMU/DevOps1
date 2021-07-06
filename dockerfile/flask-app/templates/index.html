@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>책 정보 조회하기</h1>
+<p>제목을 클릭하세요</p>
+<ul>
+    {% for key, value in template_books | dictsort %}
+    <li><a href="/book/{{ key }}"> {{ value["name"] }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
