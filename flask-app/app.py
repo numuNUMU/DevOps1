@@ -3,8 +3,8 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 book_data = {
-    1: { "name": "적정한 삶", "info":{ "author" : "김경일", "publisher": "진성북스"} , "comment" : "따뜻하게 힘을 주는 책", "image": "static/img/jacaranda.jpg"}, 
-    2: { "name": "신경끄기의 기술", "info":{ "author" : "마크 맨슨", "publisher": "갤리온" }, "comment" : "냉소적이지만 힘을 주는 책", "image": "static/img/rose.jpg"}
+    1: { "name": "적정한 삶", "info":{ "author" : "김경일", "publisher": "진성북스"} , "comment" : "따뜻하게 힘을 주는 책", "image": "img/jacaranda.jpg"}, 
+    2: { "name": "신경끄기의 기술", "info":{ "author" : "마크 맨슨", "publisher": "갤리온" }, "comment" : "냉소적이지만 힘을 주는 책", "image": "img/rose.jpg"}
 }
 
 @app.route('/')
