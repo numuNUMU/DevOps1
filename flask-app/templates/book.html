@@ -7,5 +7,10 @@
     {% endfor %}
 
     <p>한줄평: "{{ template_comment }}"</p>
+    <div>
+        {% if True %}
+        <img src="{{url_for('static', filename=template_image)}}" >
+        {% endif %}
+    </div>
 </ul>
 {% endblock %}
